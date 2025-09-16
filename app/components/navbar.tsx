@@ -1,6 +1,3 @@
-// komponen navbar + sidebar
-// bisa di import pas buat page baru
-
 'use client'
 
 import Link from "next/link";
@@ -9,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Delicious_Handrawn } from "next/font/google";
 
-// Delicious Handrawn (hanya ada 1 weight = 400)
 const deliciousHandrawn = Delicious_Handrawn({
   subsets: ["latin"],
   weight: "400",

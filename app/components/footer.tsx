@@ -1,5 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Delicious_Handrawn } from "next/font/google";
+
+// Delicious Handrawn (hanya ada 1 weight = 400)
+const deliciousHandrawn = Delicious_Handrawn({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-delicious-handrawn",
+});
 
 export default function Footer() {
     return (
@@ -17,7 +25,7 @@ export default function Footer() {
                             priority 
                             className="invert w-8 h-auto aspect-square object-cover object-top"
                         />
-                        <p className="font-bold text-2xl pr-8">Magetan Kuliner</p>
+                        <p className={`font-bold ${deliciousHandrawn.className} text-3xl pr-8`}>Magetan Kuliner</p>
                     </Link>
                         <p className="pt-8 text-start text-sm">Magetan Kuliner adalah website informasi kuliner di wilayah Kabupaten Magetan. Dibangun dari hati untuk membantu UMKM agar kuliner di Magetan semakin dikenal secara daerah maupun nasional khususnya para turis lokal maupun mancanegara.</p>
                     </div>
